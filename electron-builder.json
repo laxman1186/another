@@ -1,0 +1,43 @@
+{
+    "productName": "electron-updater-private",
+    "appId": "com.example.laxman",
+    "directories": {
+      "output": "build/${version}"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "private": true,
+        "owner": "laxman",
+        "repo": "electron-updater",
+        "token": "674d788fe4f542c1348d740f99ca6caa30699c70"
+      }
+    ],
+    "files": [
+      "dist/electron/**/*"
+    ],
+    "dmg": {
+      "contents": [
+        {
+          "x": 410,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 130,
+          "y": 150,
+          "type": "file"
+        }
+      ]
+    },
+    "mac": {
+      "icon": "build/icons/icon.icns"
+    },
+    "win": {
+      "icon": "build/icons/icon.ico"
+    },
+    "linux": {
+      "icon": "build/icons"
+    }
+  }
