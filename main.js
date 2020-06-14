@@ -68,13 +68,18 @@ autoUpdater.on('download-progress', (progressObj) => {
   let log_message = "Download speed: " + progressObj.bytesPerSecond;
   log_message = log_message + ' - Downloaded ' + progressObj.percent + '%';
   log_message = log_message + ' (' + progressObj.transferred + "/" + progressObj.total + ')';
-  sendStatusToWindow(log_message);
+  //sendStatusToWindow(log_message);
 })
 autoUpdater.on('update-downloaded', (info) => {
   sendStatusToWindow('Update downloaded');
 });
-app.on('ready', createWindow)
 
+
+
+app.on('ready', function()  {
+  createWindow();
+  autoUpdater.checkForUpdatesAndNotify();
+});
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit()
 })

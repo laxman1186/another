@@ -1,6 +1,6 @@
 {
   "name": "electron_quick_start",
-  "version": "1.7.0",
+  "version": "1.9.2",
   "main": "main.js",
   "author": "Laxman",
   "scripts": {
@@ -23,8 +23,8 @@
       "target": "nsis",
       "icon": "build/icon.ico",
       "verifyUpdateCodeSignature": false,
-      "certificateFile": "C:/Users/admin/Downloads/electron-angular-demo-master/electron-angular-demo-master/MyDevCert.pfx",
-      "certificatePassword": "SuperS3cret!"
+      "certificateFile": "DevTestCert.pfx",
+      "certificatePassword": "laxman"
     },
     "publish": [
       {
@@ -32,7 +32,7 @@
         "private": true,
         "owner": "laxman1186",
         "repo": "electron-updater",
-        "token": "674d788fe4f542c1348d740f99ca6caa30699c70"
+        "token": "c2fd1a45614287a21b7dae03661b240abae42d59"
       }
     ]
  },
