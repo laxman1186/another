@@ -67,7 +67,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
-    "electron": "^4.1.4",
+    "electron": "^11.5.0",
     "electron-builder": "^20.28.4",
     "electron-installer-windows": "^3.0.0",
     "electron-packager": "^14.2.1",
